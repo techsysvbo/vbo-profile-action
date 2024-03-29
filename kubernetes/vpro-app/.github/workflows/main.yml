@@ -3,7 +3,7 @@ on: workflow_dispatch
 env:
    AWS_REGION: us-east-1
    ECR_REPOSITORY: vboapp
-   EKS_CLUSTER: vboapp-eks
+   EKS_CLUSTER: vbo-eks
 jobs:
     Testing:
         runs-on: ubuntu-latest
