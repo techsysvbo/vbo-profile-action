@@ -28,6 +28,8 @@ jobs:
               uses: warchant/setup-sonar-scanner@v7
             # Run Sonar-scanner
             - name: SonarQube Scan
+              with:~/Repo-vs/vbo-profile-action/src
+                projectBaseDir: 
               run: sonar-scanner
                  -Dsonar.host.url=${{ secrets.SONAR_URL}}
                  -Dsonar.login=${{ secrets.SONAR_TOKEN}}
