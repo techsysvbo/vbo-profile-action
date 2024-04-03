@@ -13,11 +13,9 @@ jobs:
 
             - name: Maven test
               run: mvn test
-
             - name: Checkstyle
               run: mvn checkstyle:checkstyle
-
-              - name: Maven test
+            - name: Maven test
               run: mvn test
             # Setup Sonar-scanner
             - name: Setup SonarQube
